@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 from SPARQLWrapper import SPARQLWrapper, JSON
+import csv
  
 sparql = SPARQLWrapper("http://linkedpolitics.ops.few.vu.nl/sparql/")
 
