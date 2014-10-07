@@ -41,5 +41,5 @@ for year in time_range:
                             quotechar='"', quoting=csv.QUOTE_MINIMAL)
         writer.writerow(['title', 'count'])
         for result in results["results"]["bindings"]:
-            writer.writerow([result["title"]["value"], 
-                             result["count"]["value"]])
+            writer.writerow([unicode(result["title"]["value"], 'utf-8'),
+                             unicode(result["count"]["value"], 'utf-8')])
